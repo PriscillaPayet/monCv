@@ -2,6 +2,7 @@
 body{
   font-family: 'Antic', sans-serif;
   width: 100%;
+  background-color: white;
 }
 
 a:hover {
@@ -153,7 +154,7 @@ ul{
 }
 
 .header__container{
-  
+  background-image:url('bureau-bureau-objets.jpg');
   background-attachment: fixed;
   background-position: 15% 63%;
   background-repeat: no-repeat;
@@ -310,7 +311,8 @@ ul{
   justify-content: space-between;
   width: 100%;
   max-width: 400px;
-  padding-left: 0;
+  
+ 
 }
 
 
@@ -429,16 +431,16 @@ ul{
 }
 
 
-.experience__date{
+.experience__date, .formation__date{
   position: absolute;
   left: 50px;
 } 
 
 
-.formation__date{
+/* .formation__date{
   position: absolute;
   right: -100px;
-}
+} */
 
 
 .contact__title{
@@ -596,9 +598,8 @@ input[type="submit"]:hover , .contact__download:hover,  .mailto:hover {
   .header__container h1{
     position: absolute;
     bottom: 60%;
-    background-color: #2917171f;
     padding-left: 5px;
-    border-radius: 5px 0 0 5px  ;
+    
 
 
    
@@ -616,10 +617,14 @@ input[type="submit"]:hover , .contact__download:hover,  .mailto:hover {
     margin-left: 20%;
     padding-top: 15px;
     padding-bottom: 15px;
+    font-size: 0.8em;
   }
 
-
-  #container__parcours,
+  .softSkills__container, .interest__container{
+    justify-content: center;
+    
+  }
+  
   #container__skills,
   #container__introduction, 
   #contact__container{
@@ -627,6 +632,16 @@ input[type="submit"]:hover , .contact__download:hover,  .mailto:hover {
     padding: 20px;
   }
 
+  .experience__date, .formation__date{
+    position: static;
+  } 
+
+  .exprience__items, 
+  .formation__items{
+    padding-left:10px;
+
+  }
+ 
 
   .contact__form{
     margin: auto;
@@ -679,23 +694,32 @@ h1{
 .header__container h1{
   position: absolute;
   bottom: 60%;
-  background-color: #2917171f;
   padding-left: 5px;
-  border-radius: 5px 0 0 5px  ;
+  
 
 }
+
+
 .introduction__photo{
   display: block;
+}
+
+.softSkills__container, .interest__container{
+  justify-content: center;
 }
 
 .softSkills__list, 
 .interest__list{
   display: flex;
-  justify-content: space-between;
-  margin-right: 20%;
-  margin-left: 20%;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.interest__list li{
+  align-self: center;
+  justify-self: center;
+
 }
 
 
@@ -705,6 +729,16 @@ h1{
 #contact__container{
   margin: auto;
   padding: 20px;
+}
+
+.experience__date, .formation__date{
+  position: static;
+} 
+
+.exprience__items, 
+.formation__items{
+  padding-left:10px;
+
 }
 
 .contact__form{

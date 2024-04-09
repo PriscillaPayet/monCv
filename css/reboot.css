@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles spécifiques */
+body {
+  font-family: 'Antic', sans-serif;
+  width: 100%;
+}
+
+h1, h2, h3 {
+  font-family: 'Amatic SC', sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #291717;
+}
+
+h2 {
+  font-size: 2em;
+  color: lightgray;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+p, ul {
+  font-family: 'Advent Pro', sans-serif;
+  color: #586480;
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black; /* Modification de la couleur des liens */
+}
+
+button {
+  display: none;
+  border: none;
+  padding: 8px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1100;
+}

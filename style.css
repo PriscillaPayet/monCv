@@ -13,11 +13,14 @@ a:hover {
 
 h1,h2,h3{
   font-family:'Amatic SC', sans-serif;
+ 
+  
 }
 
 h1{
   font-size: 2.5em;
   color: #291717;
+  margin-bottom: 15px;
 }
 
 h2{
@@ -36,8 +39,6 @@ ul{
   list-style: none;
   padding:0;
 }
-
-
 
 .burger {
   display: none;
@@ -115,9 +116,6 @@ ul{
 
 }
 
-
-
-
 .sticky__top{
   position: sticky;
   top: 0;
@@ -134,9 +132,7 @@ ul{
   position: sticky;
   top: 5%;
   z-index: 1100; 
- 
-  
-  
+
 }
 
 
@@ -155,27 +151,36 @@ ul{
 
 .header__container{
   background-image:url('bureau-bureau-objets.jpg');
-  background-attachment: fixed;
-  background-position: 15% 63%;
+  background-position: 20% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
   float: left;
-  width: 85%;
-  height: 15%;
-  padding-left: 18% ;
-  padding-top: 8.5%;
+  width: 85vw;
+  height: 40vh;
+  margin-bottom: 20px;
  
-  
 }
+
+.header__container p{
+  padding-left: 8%;
+  padding-top: 10%;
+}
+
+.header__container h1{
+  padding-left: 8%;
+
+}
+
 
 .header__name, .header__hello{
   color: white;
-  text-shadow: #291717 2px 2px 3px;
-  font-size: 3em;
- 
+  text-shadow: #291717 3px 3px 4px;
+  font-size: 4em;
+  
 }
+
 .header__hello{
   font-family:'Amatic SC', sans-serif;
   font-size: 2.5em;
@@ -212,15 +217,8 @@ ul{
 
 .right__name{
   font-size: 1em;
-
 }
 
-
-
-.contact__in{
-
-
-}
 
 
 .contact__in,
@@ -236,10 +234,11 @@ ul{
 .header__name, 
 .right__name, 
 .softSkills__list,
-.interest__list,
 .contact__download,
-.mailto{
+.mailto,
+.interest__names li{
   font-family: 'Capriola', sans-serif;
+
 }
 
 .header__title{
@@ -262,29 +261,24 @@ ul{
   margin-top: 3%;
 }
 
-.softSkills__list{
-  padding-left: 0;
- 
-}
-
-
-
-
-
-.interest__list{
+.softSkills__container{
   display: flex;
-  padding-left: 0;
+  justify-content: flex-start;
 }
 
-.interest__list li{
-  padding-bottom: 10px;
-
+.softSkills__list{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  padding-left: 0;
+  
 }
 
 .introduction__text{
   text-align: justify;
   padding-right: 5px;
-  
+  line-height:30px;
   
 }
 
@@ -300,28 +294,22 @@ ul{
 
 }
 
+.interest__lists{
+  display: flex;
+  flex-direction: column;
+}
 
+.interest__names, .interest__pictures{
+  display: flex; 
+}
+.interest__names li{
+  padding-right: 50px;
+}
 
 .interest__picture{
   width: 50px;
+  margin-right: 45px;
 }
-
-.softSkills__list{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 400px;
-  
- 
-}
-
-
-
-.softSkills__container{
-  display: flex;
-  justify-content: flex-start;
-}
-
 
 
 .toolset{
@@ -329,7 +317,6 @@ ul{
   flex-wrap: wrap;
   padding-left: 0;
   justify-content: space-evenly;
-  
 
 
 }
@@ -342,12 +329,12 @@ ul{
   margin-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
-
+ 
 
 }
 
 .title__picture{
-  width: 50px;
+  width: 30px;
 
 }
 
@@ -437,10 +424,6 @@ ul{
 } 
 
 
-/* .formation__date{
-  position: absolute;
-  right: -100px;
-} */
 
 
 .contact__title{
@@ -493,12 +476,14 @@ ul{
   
 }
 
-label, input, textarea {
+/* ci-dessous: prévision pour déploiement du formulaire de contact,
+ une version  prochaine*/
+/* label, input, textarea {
   display: block;
   margin-bottom: 10px;
-}
+} */
 
-input[type="submit"] {
+/* input[type="submit"] {
   background-color: #4CAF50;
   color: white;
   border: none;
@@ -538,7 +523,7 @@ textarea {
 
 textarea {
   height: 150px;
-}
+} */
 
 input[type="submit"], .contact__download, .mailto {
   background-color: rgba(4, 73, 4);
@@ -566,8 +551,9 @@ input[type="submit"]:hover , .contact__download:hover,  .mailto:hover {
  
   }
 
-  h1{
+  h1, .interest__container h2{
     text-align: center;
+   
   }
   
   .top__nav, .right__nav, .header__hello{
@@ -591,26 +577,32 @@ input[type="submit"]:hover , .contact__download:hover,  .mailto:hover {
 
   .header__container{
     width: 100%;
-    height:50vh;
+    height:25vh;
+    background-image:url('bureau-bureau-objets.jpg');
+    background-size: cover;
+    background-position: 20% 60%;
+    position: relative;
  
   }
 
+  
   .header__container h1{
     position: absolute;
-    bottom: 60%;
+      bottom: 10px;
     padding-left: 5px;
-    
+    font-size: 2.5em;
 
-
-   
   }
-
+  .introduction__text{
+    line-height: normal;
+  }
+  
   .introduction__photo{
     display: block;
   }
 
   .softSkills__list, 
-  .interest__list{
+  .interest__lists{
     display: flex;
     justify-content: space-between;
     margin-right: 20%;
@@ -620,16 +612,39 @@ input[type="submit"]:hover , .contact__download:hover,  .mailto:hover {
     font-size: 0.8em;
   }
 
-  .softSkills__container, .interest__container{
+  .softSkills__container{
     justify-content: center;
     
   }
+
+  .interest__lists{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .interest__names, .interest__pictures{
+    display: flex; 
+    justify-content: center;
+  }
+  .interest__names li{
+    padding-right: 20px;
+    padding-left: 20px;
+  }
   
+  .interest__picture{
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  
+
+
   #container__skills,
   #container__introduction, 
-  #contact__container{
+  #contact__container,
+  #interest__container{
     margin: auto;
-    padding: 20px;
+    padding: 10px;
+
   }
 
   .experience__date, .formation__date{
@@ -663,7 +678,7 @@ input[type="submit"]:hover , .contact__download:hover,  .mailto:hover {
   width: 50%;
 }
 
-h1{
+h1, .interest__container h2{
   text-align: center;
 }
 
@@ -687,13 +702,18 @@ h1{
 
 .header__container{
   width: 100%;
-  height:50vh;
+  height:40vh;
+  background-image:url('bureau-bureau-objets.jpg');
+  background-size: cover;
+  background-position: 20% 60%;
+  position: relative;
 
 }
 
+
 .header__container h1{
   position: absolute;
-  bottom: 60%;
+    bottom: 10%;
   padding-left: 5px;
   
 
@@ -709,27 +729,43 @@ h1{
 }
 
 .softSkills__list, 
-.interest__list{
+.interest__lists,
+.interest__pictures{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
+  padding-bottom: 10px;
  
 }
 
-.interest__list li{
-  align-self: center;
-  justify-self: center;
+.interest__lists{
+  justify-content: center;
+  align-items: center;
+}
 
+.interest__names, .interest__pictures{
+  display: flex; 
+  justify-content: center;
+}
+.interest__names li{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.interest__picture{
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 
-#container__parcours,
 #container__skills,
 #container__introduction, 
-#contact__container{
-  margin: auto;
-  padding: 20px;
-}
+#contact__container,
+#interest__container{
+    margin: auto;
+    padding: 10px;
+
+  }
 
 .experience__date, .formation__date{
   position: static;

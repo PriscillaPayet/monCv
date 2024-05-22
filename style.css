@@ -210,8 +210,8 @@ ul{
   margin-top: 0;
 
 }
-.contact__in img{
-  width: 25px;
+.contact__in img, .github img{
+  width: 30px;
   
 }
 
